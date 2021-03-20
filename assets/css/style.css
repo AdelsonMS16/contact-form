@@ -129,6 +129,8 @@ textarea {
   outline: none;
   border-bottom: 1px solid var(--color-text);
   resize: none;
+  margin-top: 20px;
+  min-width: 545px;
 }
 
 .textname {
@@ -153,7 +155,7 @@ textarea {
 .container .contact .inputbox textarea:focus ~ span,
 .container .contact .inputbox textarea:valid ~ span {
   position: relative;
-  top: -130px;
+  top: -120px;
   font-size: 13px;
   color: #a83508;
 }
@@ -165,6 +167,9 @@ textarea {
   font-weight: 600;
   transition: 0.8s;
   cursor: pointer;
+  max-width: 255px;
+  text-transform: uppercase;
+  margin-left: 20px;
 }
 .submit:hover {
   background-color: #532472;
