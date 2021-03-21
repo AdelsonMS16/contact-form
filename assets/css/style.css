@@ -8,6 +8,9 @@
 * {
   font-family: 'Poppins', sans-serif;
   line-height: 30px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -15,6 +18,7 @@ body {
   justify-content: center;
   align-items: center;
   background: var(--secondary-color);
+  height: 100vh;
 }
 
 .container {
@@ -23,37 +27,36 @@ body {
   display: flex;
   justify-content: center;
   border-radius: 2px;
-  margin-top: 60px;
-  margin-left: 50px;
+  margin: auto;
   box-shadow: -10px 20px 30px var(--box-shadow-color);
 }
 
 .contact-info {
-  padding: 20px;
+  padding: 10px;
   background: var(--color-text);
-  width: 230px;
-  height: 350px;
+  width: 250px;
+  height: 400px;
   color: var(--primary-color);
   margin-top: 50px;
-  margin-left: -100px;
+  margin-left: -80px;
   border-radius: 2px;
   box-shadow: -5px 5px 5px #161c2edf;
 }
 .contact-info h1 {
   text-align: center;
+  margin: 20px auto;
 }
 
 span {
+  margin-top: 15px;
   color: var(--primary-color);
   display: inline-block;
   vertical-align: middle;
   font-size: 15px;
-  margin-top: 2px;
 }
 
 i {
   width: 45px;
-  cursor: pointer;
   color: var(--color-text);
   font-size: 15px;
   -webkit-text-stroke-width: 1px;
@@ -68,7 +71,8 @@ i {
   align-items: center;
 }
 
-#social-icon {
+.contact-info #social-icon i {
+  cursor: pointer;
   font-size: 25px;
   color: var(--primary-color);
   margin-right: 5px;
@@ -76,20 +80,20 @@ i {
   -webkit-text-stroke-color: var(--color-text);
 }
 
-#social-icon:hover {
+.contact-info #social-icon i:hover {
   color: #a83508;
 }
 
 .contact {
   padding: 20px;
-  width: 600px;
-  height: 350px;
+  width: 650px;
+  height: 100%;
   color: var(--color-text);
 }
 
 .heading {
-  font-size: 50px;
-  margin-bottom: 50px;
+  font-size: 55px;
+  padding: 40px 0;
   text-align: center;
 }
 
@@ -130,7 +134,7 @@ textarea {
   border-bottom: 1px solid var(--color-text);
   resize: none;
   margin-top: 20px;
-  min-width: 545px;
+  width: 540px;
 }
 
 .textname {
